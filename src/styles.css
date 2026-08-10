@@ -162,3 +162,26 @@
     color: var(--color-foreground);
   }
 }
+
+@layer base {
+  body {
+    font-family: var(--font-body);
+  }
+
+  h1,
+  h2,
+  h3 {
+    font-family: var(--font-display);
+    letter-spacing: -0.02em;
+  }
+}
+
+@utility veil {
+  background-image: var(--gradient-veil);
+}
+
+@utility blade-text {
+  background-image: var(--gradient-blade);
+  background-clip: text;
+  color: transparent;
+}
